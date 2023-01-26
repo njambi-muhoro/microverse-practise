@@ -1,0 +1,33 @@
+a {
+    display: inline block;
+    text-decoration: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#navbar {
+    background-color: #BE3143;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.6rem;
+    gap: 3rem;
+    position: sticky;
+    top: 0;
+}
+
+#navbar a {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#welcome-section {
+    background-color: #232325;
+}
