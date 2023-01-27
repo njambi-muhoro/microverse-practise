@@ -5,14 +5,27 @@
     <meta charset="UTF-8">
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <style scoped>
+
+.on-the-fly-behavior {
+    background-image: url('./assets/tribute.jpg'); 
+}
+/* 300 to X */
+@media (min-width: 300px) { /* or 301 if you want really the same as previously.  */
+    .on-the-fly-behavior {   
+        background-image: url('./assets/tribute.jpg');
+    }
+}
+</style>
 </head>
 
 <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <nav id="navbar">
-        <a href="!#">About</a>
-        <a href="!#">Contacts</a>
-        <a href="!#">Work</a>
+    <nav id="navbar" style="position: fixed">
+        <a href="#">About</a>
+        <a href="#">Contacts</a>
+        <a href="#">Work</a>
     </nav>
 
     <section id="welcome-section">
@@ -38,7 +51,7 @@
                 </a>
             </div>
             <div class="project-tile">
-                <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">
+                <a id="profile-link" target="_blank" href="https://codepen.io/freeCodeCamp/full/wgGVVX">
                     <img src="./assets/random-quote-machine.png" alt="Calculator">
                     <span>Random Quote Machine</span>
                 </a>
